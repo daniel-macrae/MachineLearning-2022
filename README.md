@@ -15,18 +15,34 @@ All methods present higher accuracies on the classification of Chinese numerals 
 ---
 ## Instructions
 
+
+<details>
+<summary>Preparation</summary>
+<br>
 To run the code you need to install the requirements:
 
 ```pip install -r requirements.txt```
 
 and download the datasets from the links below, placing them into the ``Data`` folder.
 
-- MNIST data from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv?select=mnist_train.csv. This is a processed version of http://yann.lecun.com/exdb/mnist/.
+- (Arabic) MNIST data from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv?select=mnist_train.csv. This is a processed version of http://yann.lecun.com/exdb/mnist/.
 - CHINESE numbers from Nazarpour, K; Chen, M (2017): Handwritten Chinese Numbers. Newcastle University. Dataset. https://www.kaggle.com/datasets/fedesoriano/chinese-mnist-digit-recognizer.
 
-
-
-
+The contents of the ``preprocessing notebook`` selects a random sample of letters from each dataset; ensuring a balanced training and texting dataset. This notebook also performs morphological operations on the Chinese characters dataset, such that their visual characteristics match that of the MNIST dataset, <details>
+<summary>as shown here:</summary>
+<br>
 ![alt text](figures/img_adjustments.png)
+</details> 
+</details>
+
+
+
+
+---
+
+
+The ``model_comparison.ipynb`` notebook is responsible for comparing the models on the testing set and generating the confusion matrices.
+
+
 
 
