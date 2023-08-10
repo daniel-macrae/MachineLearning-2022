@@ -19,7 +19,7 @@ To run the code you need to install the requirements:
 
 ```pip install -r requirements.txt```
 
-and download the datasets from:
+and download the datasets from the links below, placing them into the ``Data`` folder.
 
 - MNIST data from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv?select=mnist_train.csv. This is a processed version of http://yann.lecun.com/exdb/mnist/.
 - CHINESE numbers from Nazarpour, K; Chen, M (2017): Handwritten Chinese Numbers. Newcastle University. Dataset. https://www.kaggle.com/datasets/fedesoriano/chinese-mnist-digit-recognizer.
