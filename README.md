@@ -1,4 +1,4 @@
-# Machine Learning Project
+# Handwritten Languages Machine Learning Project
 
 In this project, we explore the flexibility of five pipelines on the classification of handwritten characters across digits of different languages, in particular Arabic and Chinese numerals. The pipelines are:
 1. Handcrafted feature extraction + SVM
