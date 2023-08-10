@@ -6,6 +6,7 @@ In this project, we explore the flexibility of five pipelines on the classificat
 3. Handcrafted feature extraction + SVM
 4. Handcrafted feature extraction + Gradient Boosting
 5. Convolutional Neural Network
+
 All pipelines were trained and tested on the combined dataset (both languages, within one training dataset), while the accuracy per language is also collected. 
 
 All methods present higher accuracies on the classification of Chinese numerals than Arabic, with the most dissimilarity when using handcrafted features (margins up to 22%); demonstrating that the patterns in some languages are easier to learn for the aforementioned machine learning methods. The use of handcrafted features derives lower classification accuracies than PCA on both classifiers, showing especially sub-optimal results with SVM (accuracy up to 54.25%). However, SVM with PCA shows better results than the Gradient Boosting classifier, with a global accuracy of 98.15% versus 95.60% of the latter. The best result is obtained in the three scenarios by the CNN, with a global accuracy of up to 99.22%.
