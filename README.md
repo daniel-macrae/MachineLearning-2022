@@ -78,36 +78,41 @@ We find that the accuracies of machine learning methods used to classify handwri
 ### Confusion Matrices
 
 <details>
-    <summary>SVM w. PCA</summary>
-    <br>
-    ![alt text](figures/cm_SVM_PCA.png)
+<summary>SVM w. PCA</summary>
+<br>
+
+![alt text](figures/cm_SVM_PCA.png)
 </details>
 
 <details>
-    <summary>SVM w. Handcrafted Features</summary>
-    <br>
-    ![alt text](figures/cm_SVM_Handcrafted.png)
+<summary>SVM w. Handcrafted Features</summary>
+<br>
+
+![alt text](figures/cm_SVM_Handcrafted.png)
 </details>
 
 
 <details>
-    <summary>GBDT w. PCA</summary>
-    <br>
-    ![alt text](figures/cm_Gradient_Boosting_PCA.png)
+<summary>GBDT w. PCA</summary>
+<br>
+
+![alt text](figures/cm_Gradient_Boosting_PCA.png)
 </details>
 
 <details>
-    <summary>GDBT w. Handcrafted Features</summary>
-    <br>
-    ![alt text](figures/cm_Gradient_Boosting_Handcrafted.png)
+<summary>GDBT w. Handcrafted Features</summary>
+<br>
+
+![alt text](figures/cm_Gradient_Boosting_Handcrafted.png)
 </details>
 
 
 
 <details>
-    <summary>CNN</summary>
-    <br>
-    ![alt text](figures/cm_cnn.png)
+<summary>CNN</summary>
+<br>
+
+![alt text](figures/cm_cnn.png)
 </details>
 
 
