@@ -42,11 +42,11 @@ The contents of the ``preprocessing notebook`` selects a random sample of letter
 
 | Algorithm | Accuracy Overall (%) | Accuracy MNIST (%) | Accuracy Chinese (%) |
 | --- | --- | --- | --- |
-SVM with PCA | 98.15 | 97.05 | 99.25 |
-SVM with Handcrafted | 43.25 | 32.25 | 54.25 |
-GBDT with PCA | 95.60 | 94.00 | 97.20 |
-GBDT with Handcrafted | 81.05 | 72.50 | 89.60 | 
-CNN | 99.22 | 98.70 | 99.75 | 
+| SVM with PCA | 98.15 | 97.05 | 99.25 |
+| SVM with Handcrafted | 43.25 | 32.25 | 54.25 |
+| GBDT with PCA | 95.60 | 94.00 | 97.20 |
+| GBDT with Handcrafted | 81.05 | 72.50 | 89.60 | 
+| CNN | 99.22 | 98.70 | 99.75 | 
 | --- | --- | --- | --- |
 
 The ``model_comparison.ipynb`` notebook is responsible for comparing the models on the testing set and generating the confusion matrices.
