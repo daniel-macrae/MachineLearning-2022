@@ -28,11 +28,31 @@ and download the datasets from the links below, placing them into the ``Data`` f
 - (Arabic) MNIST data from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv?select=mnist_train.csv. This is a processed version of http://yann.lecun.com/exdb/mnist/.
 - CHINESE numbers from Nazarpour, K; Chen, M (2017): Handwritten Chinese Numbers. Newcastle University. Dataset. https://www.kaggle.com/datasets/fedesoriano/chinese-mnist-digit-recognizer.
 
-The contents of the ``src/dataLoading.py`` selects a random sample of letters from each dataset; ensuring a balanced training and texting dataset. This notebook also performs morphological operations on the Chinese characters dataset, such that their visual characteristics match that of the MNIST dataset, as shown below, and centers and resizes all images to 64-by-64 pixels.
+The contents of the ``src/dataLoading.py`` selects a random sample of letters from each dataset; ensuring a balanced training and texting dataset. This notebook also performs morphological operations on the Chinese characters dataset, such that their visual characteristics match that of the MNIST dataset, as shown below, and centers and resizes all images to 28-by-28 pixels.
 ![alt text](figures/img_adjustments.png)
 
 </details>
 
+
+<details>
+<summary>Feature Extraction Methods</summary>
+<br>
+
+The CNN is trained on grayscale 28x28 images, while PCA is used to transform said image format down to 85 PCA components (the number of components that we find to explain 90% of the dataset's variance).
+
+In the case of handcrafted feature methods, 10 techinques are used to reduce the dimensions of the dataset (down to 10-dimensions, from 784):
+1. A mixture of Gaussians (MoG) model, using 10 Gaussians.
+2. K-Means clustering, using 20 clusters
+3. Laplacian edge detection
+4. Mean Brightness
+5. Number of countours in the image
+6. Number of circles in the image
+7. Height/width ratio of the handwritten digit
+8. Brightness ratio (middle column vs. middle row of the image)
+9. Number of white islands in the image (white regions completely surrounded by black pixels)
+10. Number of black islands in the image (reverse of the previous)
+
+</details>
 
 
 <details>
