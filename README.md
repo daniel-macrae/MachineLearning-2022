@@ -35,10 +35,13 @@ The contents of the ``preprocessing notebook`` selects a random sample of letter
 
 
 
+The ``model_comparison.ipynb`` notebook is responsible for comparing the models on the testing set and generating the confusion matrices.
+
 
 ---
 ## Results
 
+The accuracies of each classification pipeline on 0-9 handwritten digits from both languages (overall), as well as for just the Arabic digits, and just the Chinese digits, are shown below.
 
 | Algorithm | Accuracy Overall (%) | Accuracy MNIST (%) | Accuracy Chinese (%) |
 | --- | --- | --- | --- |
@@ -46,10 +49,11 @@ The contents of the ``preprocessing notebook`` selects a random sample of letter
 | SVM with Handcrafted | 43.25 | 32.25 | 54.25 |
 | GBDT with PCA | 95.60 | 94.00 | 97.20 |
 | GBDT with Handcrafted | 81.05 | 72.50 | 89.60 | 
-| CNN | 99.22 | 98.70 | 99.75 | 
-| --- | --- | --- | --- |
+| CNN | **99.22** | **98.70** | **99.75** | 
 
-The ``model_comparison.ipynb`` notebook is responsible for comparing the models on the testing set and generating the confusion matrices.
+We find that the accuracies of machine learning methods used to classify handwritten digits are subject to distinct patterns present in the handwritten structures of different languages. While the classifiers themselves, the SVM, Gradient Boosting and CNN, showed only a slight increase in classification accuracy on the Chinese digits over the Arabic digits provided by the MNIST dataset. This difference was constant throughout all five classification pipelines. We also conclude that tailoring the handcrafted features to specific patterns in the handwriting of different languages was a significant contributor to variations in classification accuracy between the two languages in our dataset. Thus, more ‘automated’ (deep) learning algorithms for feature extraction and classification may be better suited to learning to classify handwriting in problem spaces where multiple languages may be present.
+
+
 
 
 
