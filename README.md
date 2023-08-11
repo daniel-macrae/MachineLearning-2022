@@ -38,8 +38,9 @@ The contents of the ``preprocessing notebook`` selects a random sample of letter
 <details>
 <summary>Model Training</summary>
 <br>
-
+hi
 </details>
+
 
 
 <details>
